@@ -2,99 +2,70 @@
 <html>
 <head>
 <style>
-body { background="BackroundPic.jpg";}
-h1   {color: blue;font-size: 149%;}
- 
-p    {color: black;}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
 </style>
 </head>
 <body>
 
- <h1 style="text-align:center;">Deep Learning Reading Group</h1>
+<div class="container">
 
-<h1>About</h1>
- 
- 
-<p>The deep learning reading group is organized jointly by <a href="https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=handl">Lisa Handl</a> and <a href="https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=adinfo">Azim Dehgani Amirabad</a> . The group meets bi-weekly to discuss topics of interest (basic concepts as well as recent research papers in deep learning). It is open to anyone at Max Planck Institute for Informatics or Saarland University. Interested people with other affiliations are also welcome, but are requested to contact us.</p>
+<header>
+   <h1>Deep Learning Reading Group</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Meeting</a></li>
+    <li><a href="#">References</a></li>
+	<li><a href="#">Video Lectures</a></li>
+	<li><a href="#">Code and Datasets</a></li>
+	<li><a href="#">FAQ</a></li>
+  </ul>
+</nav>
 
- <h1> Meeting </h1>
- <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-achz{background-color:#ffcc67;vertical-align:top}
-.tg .tg-ufe5{background-color:#34cdf9;vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-achz">Date</th>
-    <th class="tg-achz">Topics</th>
-    <th class="tg-achz">Speaker</th>
-    <th class="tg-achz">References</th>
-    <th class="tg-achz">Slides</th>
-  </tr>
-  <tr>
-    <td class="tg-ufe5">17/02/2017</td>
-    <td class="tg-ufe5">Kick of meeting</td>
-    <td class="tg-ufe5">Azim</td>
-    <td class="tg-ufe5">-</td>
-    <td class="tg-ufe5"><a href="https://github.com/CSBioAzim/DeepLearninggroup/blob/master/Deep_learning_reading_group.pdf">Organization</a></td>
-  </tr>
-  <tr>
-    <td class="tg-ufe5">03/03/2017</td>
-    <td class="tg-ufe5">TBA</td>
-    <td class="tg-ufe5">TBA</td>
-    <td class="tg-ufe5">-</td>
-    <td class="tg-ufe5">-</td>
-  </tr>
-  <tr>
-    <td class="tg-ufe5">16/03./2017</td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-  </tr>
-  <tr>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-  </tr>
-  <tr>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-  </tr>
-  <tr>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-    <td class="tg-ufe5"></td>
-  </tr>
-</table>
-<h1> References  </h1>
- 
- <p> <a href="http://www.deeplearningbook.org/">Deep learning</a>   </p>
- 
- <p> <a href="http://neuralnetworksanddeeplearning.com/index.html">Neural networks and Deep learning</a>   </p>
- <h1> Video Lectures </h1>
-  <p> <a href="http://videolectures.net/jul09_hinton_deeplearn/">Geoffrey E. Hinton</a>   </p>
+<article>
+  <h1>About</h1>
+  <p>The deep learning reading group is organized jointly by <a href="https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=handl">Lisa Handl</a> and <a href="https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=adinfo">Azim Dehgani Amirabad</a> . The group meets bi-weekly to discuss topics of interest (basic concepts as well as recent research papers in deep learning). It is open to anyone at Max Planck Institute for Informatics or Saarland University. Interested people with other affiliations are also welcome, but are requested to contact us.</p>
 
- 
- <h1> Code and Datasets</h1>
- <p> Comming soon!</p>
- <h1>Applications in Bioinformatics</h1>
- <p><a href="http://onlinelibrary.wiley.com/doi/10.15252/msb.20156651/full">
-Deep learning for computational biology</a></p>
-  <p><a href="https://academic.oup.com/bib/article/doi/10.1093/bib/bbw068/2562808/Deep-learning-in-bioinformatics">
-Deep learning in bioinformatics
-</a></p>
-<h1> FAQ </h1>
- 
- 
+
+</article>
+
+</div>
+
 </body>
- </html>
+</html>
